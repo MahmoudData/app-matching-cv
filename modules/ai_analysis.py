@@ -22,10 +22,6 @@ def create_parlym_scoring_prompt(job_description: str, cv_text: str) -> str:
 
 ## Contexte :
 Tu es un expert en recrutement avec une spécialité dans l'ingénierie industrielle.  
-Tu maîtrises toutes les techniques pour trouver la recrue idéale, de l'analyse de CV à la réalisation des entretiens.
-
-Tu as une approche moderne du recrutement :  
-Tes actions sont guidées par les concepts de **marque employeur** et **Employee Advocacy**.
 
 ## Ta mission :
 Réaliser une analyse complète en 4 parties pour chaque profil reçu.
@@ -90,9 +86,6 @@ Attribuer un score de matching entre un CV et une offre d'emploi Parlym, basé s
 2. **Comparer chaque critère** avec ceux attendus dans l'offre d'emploi.
 3. **Attribuer les points selon la grille ci-dessus** pour chaque critère.
 4. **Additionner les points** pour obtenir le score final sur 100.
-5. **Optionnel :**
-   - Définir des seuils pour la pré-sélection automatique (exemple : shortlist si score ≥ 70).
-   - Affiner la pondération selon la criticité du poste ou selon le retour des opérationnels.
 
 **NB :**  
 Cette grille est conçue pour s'adapter à tous types d'offres Parlym, en se concentrant sur les critères globaux et structurants du matching, tout en restant agnostique des activités spécifiques.
