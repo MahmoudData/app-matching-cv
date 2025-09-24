@@ -17,12 +17,7 @@ def extract_text_from_pdf(file_path: str) -> str:
     try:
         with open(file_path, 'rb') as file:
             pdf_reader = PyPDF2.PdfReader(file)
-            text = ""
-            
-            for page_num in range(len(pdf_reader.pages)):
-                page = pdf_reader.pages[page_num]
-                text += page.extract_text() + "\n"
-            
+            text = "\n".join([page.extract_text() for page in pdf_reader.pages])
             return text.strip()
     except Exception as e:
         raise Exception(f"Erreur lors de l'extraction PDF: {str(e)}")
