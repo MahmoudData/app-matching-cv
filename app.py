@@ -69,8 +69,8 @@ def render_form():
         
         uploaded_files = st.file_uploader(
             "CV *",
-            type=['pdf'],
-            help="Sélectionnez votre CV (PDF uniquement)",
+            type=['pdf', 'docx'],
+            help="Sélectionnez votre CV (PDF ou Word)",
             accept_multiple_files=True
         )
         
