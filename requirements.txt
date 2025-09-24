@@ -6,3 +6,4 @@ openpyxl
 PyPDF2
 requests
 beautifulsoup4
+python-docx
