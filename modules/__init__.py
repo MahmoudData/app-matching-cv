@@ -1,10 +1,4 @@
 # Import des fonctions principales de chaque module
-from .job_processing import (
-    api_url,
-    fetch_job_data,
-    process_job_offer_workflow
-)
-
 from .cv_extraction import (
     extract_text_from_pdf,
     extract_multiple_cvs
@@ -20,11 +14,6 @@ from .export_utils import (
 
 # Définition de ce qui est accessible quand on fait : from modules import *
 __all__ = [
-    # Job processing
-    'api_url',
-    'fetch_job_data', 
-    'process_job_offer_workflow',
-    
     # CV extraction
     'extract_text_from_pdf',
     'extract_multiple_cvs',
